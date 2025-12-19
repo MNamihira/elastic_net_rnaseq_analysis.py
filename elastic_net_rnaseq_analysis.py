@@ -1,12 +1,13 @@
 """
-Elastic Net–based RNA-seq analysis for identifying LSD1-dependent genes
+Elastic Net–based RNA-seq analysis pipeline.
 
-This script performs Elastic Net logistic regression on variance-stabilized
-RNA-seq expression data to identify genes contributing to transcriptional
-responses upon LSD1 inhibition (S2101 treatment).
+This script performs:
+1) Loading variance-stabilized RNA-seq data
+2) Elastic Net logistic regression with nested cross-validation
+3) Model training and evaluation
+4) Extraction of prioritized genes based on standardized coefficients
 
-Author: Your Name
-Affiliation: Your Institute
+Designed for perturbation-based transcriptomic studies.
 """
 
 import numpy as np
